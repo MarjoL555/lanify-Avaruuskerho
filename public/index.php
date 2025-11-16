@@ -16,7 +16,7 @@
 
   
   // Siistitään polku urlin alusta ja mahdolliset parametrit urlin lopusta.
-  // Siistimisen jälkeen osoite /~koodaaja(=oma tunnus p51731)/lanify/tapahtuma?id=1 on 
+  // Siistimisen jälkeen osoite /~koodaaja(=oma tunnus p51731)/avaruuskerho/kerhosivu/tapahtuma?id=1 on 
   // lyhentynyt muotoon /tapahtuma.
   $request = str_replace($config['urls']['baseUrl'],'',$_SERVER['REQUEST_URI']);
   $request = strtok($request, '?');

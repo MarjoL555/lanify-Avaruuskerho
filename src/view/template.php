@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-        <h1><a href="<?=BASEURL?>">lanify</a></h1>
+        <h1><a href="<?=BASEURL?>">Avaruuskerho</a></h1>
         <div class="profile">
           <?php
             if (isset($_SESSION['user'])) {
@@ -27,7 +27,7 @@
     </section>
     <footer>
       <hr>
-      <div>lanify by Kurpitsa</div>
+      <div>Avaruuskerho by Marjo</div>
     </footer>
   </body>
 </html>

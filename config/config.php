@@ -8,7 +8,7 @@
           "host" => "localhost"
     ),
     "urls" => array(
-      "baseUrl" => "/~p51731/lanify"
+      "baseUrl" => "/~p51731/avaruuskerho/kerhosivu"
     )
   );
 
