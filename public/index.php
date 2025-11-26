@@ -28,6 +28,15 @@
   // käsittelijä.
  switch ($request) {
     case '/':
+    case '/etusivu':
+      echo $templates->render('etusivu', [ 'error' => []]);
+      break;
+    case '/kuvagalleria':
+      echo $templates->render('kuvagalleria', [ 'error' => []]);
+      break;
+    case '/yhteystiedot':
+      echo $templates->render('yhteystiedot', [ 'error' => []]);
+      break;
     case '/tapahtumat':
       require_once MODEL_DIR . 'tapahtuma.php';
       $tapahtumat = haeTapahtumat();

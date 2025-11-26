@@ -2,7 +2,8 @@
 <html lang="fi">
   <head>
     <title>lanify - <?=$this->e($title)?></title>
-    <meta charset="UTF-8">   
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/styles.css" rel="stylesheet">
   </head>
   <body>
@@ -22,12 +23,23 @@
           ?>
         </div>
     </header>
+
+        <nav>
+          <ul>
+            <li><a href="../kerhosivu">Kerhosivu</a></li>
+            <li><a href="../kerhosivu/tapahtumat">Tapahtumat</a></li>
+            <li><a href="../kerhosivu/kuvagalleria">Kuvagalleria</a></li>
+            <li><a href="../kerhosivu/yhteystiedot">Yhteystiedot</a></li>
+          </ul>
+        </nav>
+
     <section>
       <?=$this->section('content')?>
     </section>
     <footer>
       <hr>
       <div>Avaruuskerho by Marjo</div>
+      <p>Kuvat unsplash.com.</p>
     </footer>
   </body>
 </html>
