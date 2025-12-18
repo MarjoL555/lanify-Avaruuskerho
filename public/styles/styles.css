@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@400;600&display=swap");
 
 * {
   padding: 0;
@@ -7,7 +8,8 @@
 }
 
 html {
-  font-family: 'Rubik', sans-serif;
+  /*font-family: 'Rubik', sans-serif;*/
+  font-family: 'Ubuntu Sans', sans-serif;
   background-image: url("../images/avaruus.jpg");
   background-size: cover;
   background-position: top;
@@ -24,17 +26,17 @@ body {
 }
 
 header {
-  background-color: #B8BAC8;
+  background-color: #80a6df;
   padding: 1rem 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: normal;
   margin-left: 0.5rem;
 }
@@ -126,7 +128,7 @@ input {
 input[type=submit], .button {
   padding: 0.5rem 3rem;
   border-radius: 0.3rem;
-  background-color: #975579;
+  background-color: #8f4c94;
   color: #fff;
   font-weight: bold;
   min-width: 12rem;
@@ -159,5 +161,5 @@ input[type=submit], .button {
 }
 
 .info a {
-  color: #975579;
+  color: #8f4c94;
 }
