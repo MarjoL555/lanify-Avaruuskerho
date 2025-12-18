@@ -1,6 +1,8 @@
 <?php $this->layout('template', ['title' => 'Tämä on kerhon oma sivu']) ?>
 
-<h1>Tämä on kerhon sivu</h1>
-<p>, joka näkyy kun klikkaa Avaruus-otsikkoa</p>
-<p> TODO </p>
-<p>Ei sisältöä vielä??</p>
+<h1>Konnun-kylän oma tähtitiede kerho</h1>
+<p>Avaruuskerho koostuu pienestä, mutta aktiivisesta joukosta Konnun-kylän tähtiharrastajia. 
+   Kerho on avoinna kaikille alueen tähtiharrastajille. Avaruuskerho kokoontuu lauantaisin 
+   Vanhalla Tähtitornilla syyskuu-huhtikuussa. </p>
+<br>
+<p>Kerhon järjestämiä tapahtumia on ympäri vuoden. </p>
