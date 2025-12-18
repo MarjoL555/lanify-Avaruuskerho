@@ -34,6 +34,9 @@
     case '/kuvagalleria':
       echo $templates->render('kuvagalleria', [ 'error' => []]);
       break;
+    case '/ehdota':
+      echo $templates->render('ehdota', [ 'error' => []]);
+      break;
     case '/yhteystiedot':
       echo $templates->render('yhteystiedot', [ 'error' => []]);
       break;
