@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@400;600&display=swap");
 
 * {
@@ -8,14 +8,20 @@
 }
 
 html {
-  /*font-family: 'Rubik', sans-serif;*/
   font-family: 'Ubuntu Sans', sans-serif;
   background-image: url("../images/avaruus.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  /*background: rgb(0,34,0);
-  background: linear-gradient(120deg, rgba(0,34,0,1) 0%, rgba(9,136,144,1) 36%, rgba(151,85,121,1) 100%);*/
+  overflow-y: scroll;             /* fallback vanhemmille selaimille */
+  }
+
+/* Käytetään modernia CSS-ominaisuutta vain jos selain tukee sitä */
+@supports (scrollbar-gutter: stable) {
+  html { 
+    scrollbar-gutter: stable;   /* Varaa scrollbarille tilan, vaikka sitä ei näkyisi
+                                 → viewportin leveys pysyy samana */ 
+  }
 }
 
 body {

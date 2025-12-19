@@ -1,13 +1,7 @@
 <?php $this->layout('template', ['title' => 'Kuvagalleria']) ?>
 
-<h1>Kuvagalleria</h1>
-
-<p> TODO </p>
-<p>Ei toimi vielä täydellisesti. Miksi bodyn koko muuttuu ihan vähän?</p>
-
-
 <section id="kuvagalleria">
-      <h2>Valokuvia Avaruuskerhon tapahtumista</h2>
+      <h1>Valokuvia Avaruuskerhon tapahtumista</h1>
       <p>Tässä muutamia kerhon tähtiharrastajien ottamia valokuvia. 
          Osa kuvista on kuvattu kerhon omalla kameralla</p>
       <div class="kuvaosio">
