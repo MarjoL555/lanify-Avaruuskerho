@@ -40,6 +40,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);    /*pieni varjostus otsikon alle*/
 }
 
 header h1 {
@@ -58,6 +59,7 @@ nav ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 1rem 1.5rem;
 }
 
 nav li {
