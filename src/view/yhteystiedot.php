@@ -12,7 +12,8 @@
    <br>
    <br>
 <p>Kerhon kokoontumispaikkana on:</p>
-<address>Vanha tähtitorni<br>
+<address>
+   Vanha tähtitorni<br>
    Tähtipolku 7<br>
    12345 Kontu/Shire<br>
    Keski-Maa
