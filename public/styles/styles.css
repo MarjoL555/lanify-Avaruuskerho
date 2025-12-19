@@ -167,6 +167,17 @@ input[type=submit], .button {
   color: #8f4c94;
 }
 
+address {            /*osoitteen tyylejä*/
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+address a {
+  text-decoration: none;
+}
+
+
 .kuvaosio {         /*kuvagalleria tyylejä*/
   display: flex;
   justify-content: center;
