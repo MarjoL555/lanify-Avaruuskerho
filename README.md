@@ -1,6 +1,6 @@
 # Avaruuskerho – fiktiivisen kerhon kotisivut
 
-**Avaruuskerho** on fiktiivisen tähtitiede kerhon kotisivuprojekti. Sivustolla voi selata kerhon tapahtumia, ilmoittautua niihin sekä lisätä uusia tapahtumia. Tapahtumien lisääminen on mahdollista ilman kirjautumista. Sivustolla on myös kuvagalleria sekä yhteystieto-sivu. Admin-sivut ovat vielä keskeneräiset.
+**Avaruuskerho** on fiktiivisen tähtitiede kerhon kotisivuprojekti. Sivustolla voi selata kerhon tapahtumia, ilmoittautua niihin sekä lisätä uusia tapahtumia. Vuoden 2026 uusien tapahtumien ehdottaminen on mahdollista ilman kirjautumista. Sivustolla on myös kuvagalleria sekä yhteystieto-sivu. Admin-sivut ovat vielä keskeneräiset.
 
 Projekti on toteutettu Backend-opintojen näyttötyönä SASKY:n Fullstack-koodaajan opinto-ohjelmassa. Projektia on toteutettu lanify- opintotehtävän pohjalta.
 
@@ -28,7 +28,8 @@ Tämä opintoprojekti on keskeneräinen ja sitä kehitetään edelleen.
 
 ## Ylläpitäjä
 
-Tätä projektia ylläpitää  
+Tätä projektia ylläpitää
+
 **Marjo Lumijärvi**  
 GitHub: [https://github.com/MarjoL555](https://github.com/MarjoL555)
 
