@@ -213,3 +213,67 @@ address a {
   height: auto;
   border-radius: 6px;
 }
+
+
+
+/* Tässä lopussa on optimointia mobiililaitteilla, jotta asettuu paremmin 
+kapealle näytölle. Aiemmin header-otsikko ei kaventunut lainkaan. 
+Tähän kysytty ohjetta suoraan Tekoälyltä ChatGTP..*/
+
+@media (max-width: 600px) {
+
+  body {
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    margin: 0.5rem 0;
+  }
+
+  nav ul {
+    padding: 0.5rem;
+  }
+
+  /*nav li {                          Voi laittaa alekkain, jos haluaa.
+    padding: 0.7rem;
+    margin: 0.3rem;
+    width: 100%;
+    text-align: center;
+  }*/
+
+  section {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .tapahtumat > div {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .tapahtumat > div > div:nth-child(3) {
+    text-align: left;
+  }
+
+  input[type=submit],
+  .button {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .kuvaosio {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  html {
+    background-attachment: scroll;
+  }
+}
