@@ -1,5 +1,7 @@
 <?php $this->layout('template', ['title' => 'Tulevat tapahtumat']) ?>
 
+<section id="tapahtumat">
+
 <h1>Tulevat tapahtumat</h1>
 
 <div class='tapahtumat'>
@@ -20,3 +22,4 @@ foreach ($tapahtumat as $tapahtuma) {
 
 ?>
 </div>
+</section>

@@ -1,5 +1,6 @@
 <?php $this->layout('template', ['title' => 'yhteystiedot']) ?>
 
+<section id="yhteystiedot">
 <h1>Yhteystiedot ja kerhon toiminta</h1>
 <p>Kerho kokoontuu lauantaisin Vanhalla Tähtitornilla syyskuu-huhtikuu.</p>
    <br>
@@ -18,3 +19,4 @@
    12345 Kontu/Shire<br>
    Keski-Maa
 </address>
+</section>

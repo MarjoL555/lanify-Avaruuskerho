@@ -1,5 +1,6 @@
 <?php $this->layout('template', ['title' => 'Ehdota']) ?>
 
+<section id="ehdota">
 <h1>Ehdota vuoden 2026 tapahtumaa</h1>
 <p>Onko sinulla joku hyvä idea Avaruuskerhon tapahtumiin, johon haluaisit osallistua?
    Mitä haluaisit opetella seuraavana kesänä tähtitiede päivillä?
@@ -13,3 +14,4 @@
     Rakenna tyylillisesti hyvä ja muutenkin toimiva sivusto</h3>
 <br>
 <p>Kesken. Ei sisältöä vielä, ideoi jotain??</p>
+</section>
