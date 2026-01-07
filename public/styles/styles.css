@@ -112,6 +112,8 @@ footer p {
 .tapahtumat > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1.5px dashed #80a6df;
+  padding: 0.3em;
 }
 
 .tapahtumat > div > div:nth-child(3) {
@@ -186,7 +188,7 @@ address a {
 }
 
 
-.kuvaosio {         /*kuvagalleria tyylejä*/
+.kuvaosio {                       /*kuvagalleria tyylejä*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -214,9 +216,16 @@ address a {
   border-radius: 6px;
 }
 
-.tapahtumat > div  {
-  padding: 0.3em;
+
+
+.ehdotalomake {                     /*Ehdota sivun tyylejä*/
+  max-width: 30em;  
+  margin: 0 auto;
+  margin-top: 4em;
 }
+
+
+
 
 
 /* Tässä lopussa on optimointia mobiililaitteilla, jotta asettuu paremmin 

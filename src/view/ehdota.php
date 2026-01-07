@@ -1,6 +1,8 @@
-<?php $this->layout('template', ['title' => 'Ehdota']) ?>
+<?php $this->layout('template', ['title' => 'Ehdota tapahtumaa 2026']) ?>
+
 
 <section id="ehdota">
+
 <h1>Ehdota vuoden 2026 tapahtumaa</h1>
 <p>Onko sinulla joku hyvä idea Avaruuskerhon tapahtumiin, johon haluaisit osallistua?
    Mitä haluaisit opetella seuraavana kesänä tähtitiede päivillä?
@@ -14,10 +16,26 @@
     Rakenna tyylillisesti hyvä ja muutenkin toimiva sivusto</h3>
 <br>
 <p>Kesken. Ei sisältöä vielä, ideoi jotain??</p>
-<br>
+
+    
+<div class="ehdotatoiveet">
+
+<?php
+    foreach ($ehdotatoiveet as $ehdotatapahtuma) {
+      
+      echo "      <div class='ehdotatoive'>", PHP_EOL;
+      echo "      <div class='ehdotatoive-nimi'>$ehdotatapahtuma[nimi]</div>", PHP_EOL;
+      echo "      <div class='ehdotatoive-toive'>$ehdotatapahtuma[toive]</div>", PHP_EOL;    
+      // Tämä nappi pois päältä, että muiden toiveita ei voi verkkosivulta poistella.
+      // Napin voi laittaa päälle, jos tulevaisuudessa sitä tarvitaan sivustolla.
+      // echo "      <div class='ehdotatoive-poista'><a href='?poista=$ehdotatapahtuma[id]'>🗑️</a></div>", PHP_EOL;   
+      echo "      </div>", PHP_EOL;
+    }
+?>
+    </div>
 
 <div class="ehdotalomake">    
-      <div class="virheteksti"><?= $virhe ?></div>  
+      <div class="error"><?= $virhe ?></div>  
       <form action="" method="POST">
         <div>
           <label for="nimi">Nimi:</label>
@@ -31,6 +49,6 @@
           <input type="submit" name="laheta" value="LISÄÄ EHDOTUS">
         </div>             
       </form>      
-</div>
+</div>   
 
 </section>
