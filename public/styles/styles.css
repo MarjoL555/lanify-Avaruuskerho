@@ -13,14 +13,14 @@ html {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  overflow-y: scroll;             /* fallback vanhemmille selaimille */
+  overflow-y: scroll;                           /* fallback vanhemmille selaimille */
   }
 
 /* Käytetään modernia CSS-ominaisuutta vain jos selain tukee sitä */
 @supports (scrollbar-gutter: stable) {
   html { 
-    scrollbar-gutter: stable;   /* Varaa scrollbarille tilan, vaikka sitä ei näkyisi
-                                 → viewportin leveys pysyy samana */ 
+    scrollbar-gutter: stable;          /* Varaa scrollbarille tilan, vaikka sitä ei näkyisi
+                                        → viewportin leveys pysyy samana */ 
   }
 }
 
@@ -32,7 +32,7 @@ body {
   box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
 }
 
-header {
+header {                                          /*Otsikon eli headerin tyylejä*/
   background-color: #80a6df;
   padding: 1rem 1.5rem;
   display: flex;
@@ -40,7 +40,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);    /*pieni varjostus otsikon alle*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);     /*pieni varjostus otsikon alle*/
 }
 
 header h1 {
@@ -54,7 +54,7 @@ header a {
   text-decoration: none;
 }
 
-nav ul {
+nav ul {                                         /*Navigointi palkin tyylejä*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@ nav li:hover a {
 }
 
 section {
-  font-size: 18px ; /* sisältö tekstin fonttikoko*/
+  font-size: 18px ;                               /*sisältö tekstin fonttikoko*/
   padding: 1.5rem 1rem 1rem 1rem;
 }
 
@@ -98,7 +98,7 @@ hr {
   margin: 1rem;
 }
 
-footer {
+footer {                                          /*Footer alueen tyylejä*/
   font-size: 0.8rem;
   padding: 2em;
   text-align: center;
@@ -109,7 +109,7 @@ footer p {
   margin: 0.5em;
 }
 
-.tapahtumat > div {
+.tapahtumat > div {                              /*Tapahtumat alueen tyylejä*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-bottom: 1.5px dashed #80a6df;
@@ -131,7 +131,7 @@ form > div {
   margin-top: 0.5rem;
 }
 
-input {
+input {                                            /*Lomakkeen tekstinsyöttö tyylejä*/
   border: 1px solid #999;
   border-radius: 0.3rem;
   padding: 0.45rem;
@@ -140,10 +140,10 @@ input {
 
 input:focus {
   outline: 1px solid #80a6df;
-  
 }
 
-input[type=submit], .button {
+
+input[type=submit], .button {                     /*Button- napin tyylejä*/
   padding: 0.5rem 3rem;
   border-radius: 0.3rem;
   background-color: #8f4c94;
@@ -188,7 +188,7 @@ input[type=submit]:hover,
   color: #8f4c94;
 }
 
-address {                         /*osoitteen tyylejä*/
+address {                                         /*osoitteen tyylejä*/
   font-style: normal;
   font-weight: 600;
   margin-top: 1em;
@@ -199,7 +199,7 @@ address a {
 }
 
 
-.kuvaosio {                       /*kuvagalleria tyylejä*/
+.kuvaosio {                                      /*kuvagalleria tyylejä*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -229,7 +229,7 @@ address a {
 
 
 
-.ehdotalomake {                     /*Ehdota sivun tyylejä*/
+.ehdotalomake {                                    /*Ehdota sivun ja lomakkeen tyylejä*/
   max-width: 30em;  
   margin: 0 auto;
   margin-top: 4em;
@@ -242,7 +242,7 @@ address a {
   padding: 0.75em 0;
 }
 
-.ehdotatoiveet {                       /*Valmiit ehdotukset tyylejä*/
+.ehdotatoiveet {                                  /*Valmiit ehdotukset tyylejä*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -260,7 +260,17 @@ address a {
 .ehdotatoiveet p {
   margin: 0.5em 0;
 }
+ 
 
+#astronomy-fact {                                 /*Etusivulle pieni vaihtuva fakta-api*/
+  margin-top: 5em; 
+  padding : 2em;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  font-style: italic;
+  color: #8f4c94;
+}
 
 
 /* Tässä lopussa on optimointia mobiililaitteilla, jotta asettuu paremmin 
@@ -288,7 +298,7 @@ Tähän kysytty ohjetta suoraan Tekoälyltä ChatGTP..*/
     padding: 0.5rem;
   }
 
-  /*nav li {                          Voi laittaa alekkain, jos haluaa.
+  /*nav li {                             Voi laittaa alekkain, jos haluaa.
     padding: 0.7rem;
     margin: 0.3rem;
     width: 100%;

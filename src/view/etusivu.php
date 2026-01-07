@@ -6,5 +6,10 @@
    Kerho on avoinna kaikille alueen tähtiharrastajille. Avaruuskerho kokoontuu lauantaisin 
    Vanhalla Tähtitornilla syyskuu-huhtikuussa. </p>
 <br>
-<p>Kerhon järjestämiä tapahtumia on ympäri vuoden. </p>
+<p>Tutki tähtitaivaan mysteerejä kanssamme! Kerhon tapahtumat tarjoavat elämyksiä ympäri vuoden. </p>
+
+<p id="astronomy-fact"></p>
+
+    <script src="js/script.js"></script>
+
 </section>

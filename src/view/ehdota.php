@@ -62,8 +62,7 @@
     }
 
     // Haetaan ehdotukset.
-    $stmt = $pdo->prepare("SELECT id, nimi, toive 
-                           FROM   ehdotatapahtuma"); 
+    $stmt = $pdo->prepare("SELECT id, nimi, toive FROM ehdotatapahtuma"); 
     $stmt->execute(); 
     $ehdotatoiveet = $stmt->fetchAll();
 
@@ -108,7 +107,7 @@
     </div>
     
     <div class="ehdotalomake">    
-      <div class="virheteksti"><?= $virhe ?></div>  
+      <div class="error"><?= $virhe ?></div>  
       <form action="" method="POST">
         <div>
           <label for="nimi">Nimi:</label>
