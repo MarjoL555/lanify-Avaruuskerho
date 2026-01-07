@@ -214,6 +214,9 @@ address a {
   border-radius: 6px;
 }
 
+.tapahtumat > div  {
+  padding: 0.3em;
+}
 
 
 /* Tässä lopussa on optimointia mobiililaitteilla, jotta asettuu paremmin 
