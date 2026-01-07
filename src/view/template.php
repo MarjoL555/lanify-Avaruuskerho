@@ -29,8 +29,8 @@
             <li><a href="../kerhosivu">Kerhosivu</a></li>
             <li><a href="../kerhosivu/tapahtumat">Tapahtumat</a></li>
             <li><a href="../kerhosivu/kuvagalleria">Kuvagalleria</a></li>
-            <li><a href="../kerhosivu/ehdota">Ehdota 2026</a></li>
-            <li><a href="../kerhosivu/ehdotatesti">Ehdota testi 2026</a></li>
+            <li><a href="../kerhosivu/ehdota">Ehdota tapahtumaa 2026</a></li>
+          
             <li><a href="../kerhosivu/yhteystiedot">Yhteystiedot</a></li>
           </ul>
         </nav>

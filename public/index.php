@@ -39,11 +39,6 @@
       //$ehdotatapahtuma = haeEhdotaTapahtumat();
       echo $templates->render('ehdota', [ 'error' => []]);
       break;
-    case '/ehdotatesti':
-      //require_once MODEL_DIR . 'ehdotatapahtuma.php';
-      //$ehdotatapahtuma = haeEhdotaTapahtumat();
-      echo $templates->render('ehdotatesti', [ 'error' => []]);
-      break;
     case '/yhteystiedot':
       echo $templates->render('yhteystiedot', [ 'error' => []]);
       break;

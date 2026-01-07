@@ -1,24 +1,97 @@
-<?php $this->layout('template', ['title' => 'Ehdota tapahtumaa 2026']) ?>
+<?php $this->layout('template', ['title' => 'Ehdota tapahtumaa 2026']) ?><?php
+
+//Minulla oli isoja ongelmia saada tämä toimimaan. Lopulta päätin käyttää 
+//tukiopetus tunnilla tehtyä lahjalista- materiaalia tämän pohjana, koska olin saanut sen toimimaan hyvin. 
+//Tämä toiminnallisuus eroaa siksi muusta sivustosta ja tulevaisuudessa voisin 
+//yrittää yhtenäistää tämän toiminnallisuuden muuhun sivuston kokonaisuuteen.
 
 
+  // Haetaan tietokantayhteyden tiedot ympäristömuuttujista.
+  $db_database = $_SERVER["DB_DATABASE"];
+  $db_username = $_SERVER["DB_USERNAME"];
+  $db_password = $_SERVER["DB_PASSWORD"];
+
+  // Alustetaan PDO-yhteyden asetukset.
+  $dsn = "mysql:host=localhost;dbname=$db_database;charset=utf8mb4"; 
+  $options = [ 
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, 
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, 
+    PDO::ATTR_EMULATE_PREPARES   => false, 
+  ]; 
+   
+  try { 
+
+    // Avataan tietokantayhteys. 
+    $pdo = new PDO($dsn, $db_username, $db_password, $options);
+
+    // Tarkistetaan onko lomaketta täytetty.
+    if (isset($_POST['laheta']) && !empty($_POST['laheta'])) {
+      
+        // Noudetaan tiedot.
+        $nimi = $_POST['nimi'];
+        $toive = $_POST['toive'];
+
+        // Tarkistetaan, että pakolliset ovat määritelty.
+        if (!empty($nimi) && !empty($toive)) {
+
+          // Lisätään rivi tietokantaan;
+          $stmt = $pdo->prepare("INSERT INTO ehdotatapahtuma (nimi, toive) VALUES (?,?)"); 
+          $stmt->execute([$nimi, $toive]);
+
+          // Tyhjennetään lomakkeen kentät.
+          $nimi = "";
+          $toive = "";
+
+        } else {
+
+          // Pakollisia kenttiä ei oltu määritelty. 
+          $virhe = "Syötä vähintään nimi ja tapahtuma ehdotus.";
+
+        }
+    }
+
+    // Tarkistetaan, ollaanko poistamassa riviä. (Nyt rivien poistaminen on suljettu.)
+    if (isset($_GET['poista'])) {
+
+      // Noudetaan poistettavan ehdotuksen id.
+      $id = $_GET['poista'];
+
+      // Poistetaan ehdotus.
+      $stmt = $pdo->prepare("DELETE FROM ehdotatapahtuma WHERE id = ?"); 
+      $stmt->execute([$id]);
+    }
+
+    // Haetaan ehdotukset.
+    $stmt = $pdo->prepare("SELECT id, nimi, toive 
+                           FROM   ehdotatapahtuma"); 
+    $stmt->execute(); 
+    $ehdotatoiveet = $stmt->fetchAll();
+
+  } catch (PDOException $e) { 
+
+    // Tietokannan käsittelyssä tapahtui virhe, 
+    // tulostetaan virheilmoitus ja kuollaan pois. 
+    echo $e->getMessage(); 
+    die();
+
+  } 
+
+?>
 <section id="ehdota">
 
-<h1>Ehdota vuoden 2026 tapahtumaa</h1>
+<h1>Ehdota vuodelle 2026 Avaruuskerhon tapahtumaa</h1>
+
 <p>Onko sinulla joku hyvä idea Avaruuskerhon tapahtumiin, johon haluaisit osallistua?
    Mitä haluaisit opetella seuraavana kesänä tähtitiede päivillä?
    Tai onko sinulla joku suosikki puhuja, jonka haluaisit kutsua pitämään esitelmää?</p>
 <br>
-<p>Tällä lomakkeella voit ehdottaa omaa ideaa tai tapahtuma toivetta ensi vuodelle.</p>
+<p>Sivun lopussa voit ehdottaa omaa ideaa tai tapahtuma toivetta ensi vuodelle.</p>
 <br>
-<h3> TODO: Tee toiminnallisuus, jolla voi ehdottaa omaa ideaa ja 
-    nähdä kaikki muut ehdotetut tapahtumat. 
-    Tee MariaDB taulukko ja sille lyhyesti esimerkki sisältö.
-    Rakenna tyylillisesti hyvä ja muutenkin toimiva sivusto</h3>
-<br>
-<p>Kesken. Ei sisältöä vielä, ideoi jotain??</p>
 
-    
 <div class="ehdotatoiveet">
+
+<h2>Jo ehdotettuja toivoita:</h2>
+<br>
 
 <?php
     foreach ($ehdotatoiveet as $ehdotatapahtuma) {
@@ -33,9 +106,9 @@
     }
 ?>
     </div>
-
-<div class="ehdotalomake">    
-      <div class="error"><?= $virhe ?></div>  
+    
+    <div class="ehdotalomake">    
+      <div class="virheteksti"><?= $virhe ?></div>  
       <form action="" method="POST">
         <div>
           <label for="nimi">Nimi:</label>
@@ -45,10 +118,12 @@
           <label for="toive">Tapahtuma toive tai ehdotus:</label>
           <input type="text" name="toive" id="toive" value="<?= $toive ?>">
         </div>
+       
         <div>        
           <input type="submit" name="laheta" value="LISÄÄ EHDOTUS">
         </div>             
       </form>      
-</div>   
-
-</section>
+    </div>
+    </section>
+  </body>
+</html>
