@@ -364,4 +364,10 @@ Tähän kysytty ohjetta suoraan Tekoälyltä ChatGTP..*/
   .ehdotatoive > div {
     padding: 0.2rem;  
   }
+
+  .iframe {
+    max-width: 100%;
+    min-width: 60vw;                            /* 60% näytön leveydestä */
+  }
+
 }
