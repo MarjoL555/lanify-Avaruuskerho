@@ -30,7 +30,6 @@
             <li><a href="../kerhosivu/tapahtumat">Tapahtumat</a></li>
             <li><a href="../kerhosivu/kuvagalleria">Kuvagalleria</a></li>
             <li><a href="../kerhosivu/ehdota">Ehdota tapahtumaa 2026</a></li>
-          
             <li><a href="../kerhosivu/yhteystiedot">Yhteystiedot</a></li>
           </ul>
         </nav>

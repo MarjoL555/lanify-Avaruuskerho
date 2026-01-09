@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.80);
   min-height: 100vh;
   max-width: 55rem;
   margin: 0 auto;
@@ -94,7 +94,7 @@ section h1 {
 
 hr {
   border: none;
-  border-top: solid #1B1B3A 2px;
+  border-top: solid #80a6df 2px;
   margin: 1rem;
 }
 
@@ -113,11 +113,12 @@ footer p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-bottom: 1.5px dashed #80a6df;
-  padding: 0.3em;
+  padding: 0.5rem;
 }
 
 .tapahtumat > div > div:nth-child(3) {
   text-align: right;
+  padding: 0.3rem;
 }
 
 /*tai .tapahtumat > div {
@@ -176,7 +177,7 @@ input[type=submit]:hover,
 }
 
 .info {
-  background-color: #e5e5e5;
+  background-color: white;
   border: 1px solid #999;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -313,10 +314,12 @@ Tähän kysytty ohjetta suoraan Tekoälyltä ChatGTP..*/
   .tapahtumat > div {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+    padding: 1rem;
   }
 
   .tapahtumat > div > div:nth-child(3) {
     text-align: left;
+    padding: 0.3rem 0;
   }
 
   input[type=submit],
@@ -344,12 +347,12 @@ Tähän kysytty ohjetta suoraan Tekoälyltä ChatGTP..*/
     grid-row: 2;
   }
    .ehdotatoiveet, .ehdotalomake {
-    margin: 0 1em;
+    margin: 0.5em 1em;
   }
 
   .ehdotatoive {    
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 1fr auto auto;
   }
 
   /*.ehdotatoive-poista {
@@ -359,6 +362,6 @@ Tähän kysytty ohjetta suoraan Tekoälyltä ChatGTP..*/
   }*/
 
   .ehdotatoive > div {
-    padding: 0;  
+    padding: 0.2rem;  
   }
 }

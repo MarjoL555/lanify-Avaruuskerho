@@ -17,6 +17,9 @@
    Vanha tähtitorni<br>
    Tähtipolku 7<br>
    12345 Kontu/Shire<br>
-   Keski-Maa
+   Keski-Maa <br>
+   <br>
+   040 123 4567 <br>
+   info@avaruuskerho.fi
 </address>
 </section>
