@@ -26,7 +26,7 @@
 
         <nav>
           <ul>
-            <li><a href="../kerhosivu">Kerhosivu</a></li>
+            <li><a href="../kerhosivu">Kerhon etusivu</a></li>
             <li><a href="../kerhosivu/tapahtumat">Tapahtumat</a></li>
             <li><a href="../kerhosivu/kuvagalleria">Kuvagalleria</a></li>
             <li><a href="../kerhosivu/ehdota">Ehdota tapahtumaa 2026</a></li>

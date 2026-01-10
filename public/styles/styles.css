@@ -211,7 +211,6 @@ address a {
   border-radius: 6px;
   margin: 0.5em;
   padding: 1em;
-  /*max-width: calc(var(--max-width) * 0.5);*/
 }
 
 .kuvaosio h3 {
@@ -229,7 +228,6 @@ address a {
 }
 
 
-
 .ehdotalomake {                                    /*Ehdota sivun ja lomakkeen tyylejä*/
   max-width: 30em;  
   margin: 0 auto;
@@ -244,14 +242,12 @@ address a {
 }
 
 .ehdotatoiveet {                                  /*Valmiit ehdotukset tyylejä*/
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: white;
   border-radius: 6px;
   margin: 0.5em;
   padding: 1em;
-  /*max-width: calc(var(--max-width) * 0.5);*/
 }
 
 .ehdotatoiveet h2 {
@@ -355,7 +351,7 @@ Tähän kysytty ohjetta suoraan Tekoälyltä ChatGTP..*/
     grid-template-rows: 1fr auto auto;
   }
 
-  /*.ehdotatoive-poista {
+  /*.ehdotatoive-poista {                       Poista nappi suljettu
     grid-column: 10;
     grid-row: 3;
     text-align: right;

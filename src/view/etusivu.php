@@ -1,4 +1,4 @@
-<?php $this->layout('template', ['title' => 'Tämä on kerhon oma sivu']) ?>
+<?php $this->layout('template', ['title' => 'Tämä on kerhon oma etusivu']) ?>
 
 <section id="etusivu">
 <h1>Konnun-kylän oma tähtitiede kerho</h1>

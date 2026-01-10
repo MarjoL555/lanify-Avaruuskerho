@@ -89,7 +89,7 @@
 
 <div class="ehdotatoiveet">
 
-<h2>Jo ehdotettuja toivoita:</h2>
+<h2>Jo ehdotettuja toiveita:</h2>
 <br>
 
 <?php
