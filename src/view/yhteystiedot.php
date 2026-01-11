@@ -48,7 +48,7 @@
     URL: https://stellarium-web.org/?lat=61.3406&lon=22.9116&fov=60
     Stellarium Web on selainversio Stellarium-ohjelmasta:
       - Käyttöoikeus: GNU General Public License (GPL)
-      - Lähde: https://stellarium.org
+      - Lähde: https://stellarium-web.org
       - Linkin voi vapaasti jakaa koulutuskäyttöön ja harrastelijoille
     Huom: Kellonajan voi asettaa itse käyttöliittymässä, URL ei sisällä kiinteää aikaa.
   -->

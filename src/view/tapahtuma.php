@@ -10,7 +10,7 @@
 <div><?=$tapahtuma['kuvaus']?></div>
 <br>
 <div>Alkaa: <?=$start->format('j.n.Y')?> klo <?=$start->format('G.i')?></div>
-<div>Päättyy: <?=$end->format('j.n.Y')?> klo <?=$start->format('G.i')?></div>
+<div>Päättyy: <?=$end->format('j.n.Y')?> klo <?=$end->format('G.i')?></div>
 </section>
 
 <?php
