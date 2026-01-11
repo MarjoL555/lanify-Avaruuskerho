@@ -6,7 +6,7 @@ Projekti on toteutettu Backend-opintojen näyttötyönä SASKY:n Fullstack-kooda
 
 ---
 
-[Etusivu](public/images/etusivu.png?raw=true)
+[Etusivu](etusivu.png)
 
 ## Tekniikat
 
