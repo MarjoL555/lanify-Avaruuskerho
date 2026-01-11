@@ -8,7 +8,7 @@ Projekti on toteutettu Backend-opintojen näyttötyönä SASKY:n Fullstack-kooda
 
 ![Etusivu](public/images/etusivu.png)
 
-![Mobiili](public/images/mobiili.png)
+<img src="public/images/mobiili.png" alt="Mobiilinäkymä" width="400">
 
 ## Tekniikat
 

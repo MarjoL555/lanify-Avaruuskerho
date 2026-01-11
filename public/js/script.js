@@ -5,7 +5,7 @@
 // Array lista tähtitiede faktoista
 const facts = [
   "Aurinko on keltainen kääpiötähti.",
-  "Universumissa on enemmän tähtiä kuin hiekkanjyviä kaikilla Maan rannoilla yhteensä.",
+  "Universumissa on enemmän tähtiä kuin hiekanjyviä kaikilla Maan rannoilla yhteensä.",
   "Venuksen 'päivä' on pidempi kuin sen 'vuosi'.",
   "Aurinkokuntamme suurin tulivuori sijaitsee Marsissa (Olympus Mons).",
   "Jupiterin Suuri Punainen Pilkku on jättimäinen myrsky, joka on suurempi kuin Maa.",
